@@ -1,8 +1,17 @@
 name: ola_maps_autofill
-description: "A new Flutter package project."
+description: "The ola_maps_autofill package provides a customizable search field component for Flutter applications."
 version: 0.0.1
 homepage:
+repository: https://github.com/soumyajitdas365/ola_maps_autofill
 
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 environment:
   sdk: '>=3.1.0 <4.0.0'
   flutter: ">=1.17.0"

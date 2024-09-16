@@ -145,6 +145,7 @@ class SearchField extends StatelessWidget {
   Widget build(BuildContext context) {
     kApiKey = apiKey;
     return CustomDropdown.searchRequest(
+        noResultFoundText: noResultFoundText,
         closedHeaderPadding: closedHeaderPadding,
         controller: controller,
         decoration: decoration,
