@@ -29,8 +29,7 @@ class MainApp extends StatelessWidget {
                 ),
                 const Gap(5),
                 SearchField(
-                  
-                  apiKey: 'Pw4YDkQyTqvKNa73w6EDMh5DRTw4hkPgE2RiVdAg',
+                  apiKey: 'YourApiKey',
                   onChanged: (value) {
                     log((value?.toJson()).toString());
                   },
