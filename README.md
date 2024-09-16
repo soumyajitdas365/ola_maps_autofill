@@ -41,7 +41,6 @@ import 'package:ola_maps_autofill/ola_maps_autofill.dart';
 ```
 SearchField(
   apiKey: yourOlaMapsApiKey,
-  // Other properties (optional)
   hintText: "Search for places...",
   onChanged: (address) {
     // Handle address selection
@@ -96,11 +95,10 @@ SearchField(
 SearchField(
   apiKey: apiKey,
   apiType: SearchText(
-    location: "Kolkata, India",
+    location: "22.59919448821577, 88.27343260904112",
     radius: 5000,
-    types: ["restaurant"],
   ),
-  hintText: "Search for restaurants...",
+  hintText: "Search for places",
   onChanged: (address) {
     // Handle address
 }
