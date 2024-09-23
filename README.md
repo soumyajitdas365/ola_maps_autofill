@@ -56,9 +56,10 @@ SearchField(
 **Available Properties:**
 
 - `apiKey`: (Required) Your Ola API key.
-- `apiType`: (Optional) Choose between `AutoComplete` and `SearchText`. Defaults to `AutoComplete`.
+- `apiType`: (Optional) 
+   Defaults to `AutoComplete`.
   - `AutoComplete`: Used for basic autocomplete suggestions.
-  - `SearchText`: Used for advanced search with additional parameters like location, radius, size, and types. You can configure these parameters on the `SearchText` object.
+ additional parameters like location, radius, size, and types. You can configure these parameters on the `SearchText` object.
 - `closedHeaderPadding`: Padding for the closed state of the search field.
 - `controller`: (Optional) A controller to manage the selected address.
 - `decoration`: Customize the appearance of the search field.
@@ -84,17 +85,11 @@ SearchField(
 - `canCloseOutsideBounds`: (Optional) Control if the suggestion list closes when tapping outside (default: true).
 - `closeDropDownOnClearFilterSearch`: (Optional) Close the suggestion list when clearing the search text.
 
-**SearchText Parameters:**
-
-- `location`: (Optional) Specify a location for the search.
-- `radius`: (Optional) Define a search radius in meters.
-- `size`: (Optional) Limit the number of search results returned.
-- `types`: (Optional) Filter search results by place type (e.g., "restaurant", "atm").
 
 ```
 SearchField(
   apiKey: apiKey,
-  apiType: SearchText(
+  apiType: AutoComplete(
     location: "22.59919448821577, 88.27343260904112",
     radius: 5000,
   ),
